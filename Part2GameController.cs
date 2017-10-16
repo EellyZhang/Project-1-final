@@ -41,7 +41,7 @@ public class Part2GameController : MonoBehaviour
 
 			if (goldCheck == false && bronzePlayer == 2 && silverPlayer == 2 && goldPlayer < 1)
 			{
-				currentCube = Instantiate(cubePrefab, new Vector3(Random.Range(-10, 10), Random.Range(-10, 10), 0), Quaternion.identity);
+				currentCube = Instantiate(cubePrefab, new Vector3(Random.Range(-5, 5), Random.Range(-5, 5), 0), Quaternion.identity);
 				currentCube.GetComponent<Renderer>().material.color = Color.yellow;
 				currentCube.GetComponent<CubeBehavior>().cubeType = "gold";
 
